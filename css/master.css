@@ -1,0 +1,119 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(180, 180, 180);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Start Header */
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    height: 60px;
+}
+
+header a {
+    padding: 10px;
+    transition: .3s;
+}
+
+header a:hover {
+    background-color: #c7c7c7b9;
+}
+
+/* End Header */
+/* Start Page */
+
+.page {
+    display: flex;
+}
+
+/* Start Aside */
+
+.page aside {
+    background-color: #333;
+    width: 300px;
+    text-align: center;
+    height: calc(100vh - 60px);
+    overflow-y: scroll;
+}
+
+.page aside a {
+    padding: 10px;
+    border-bottom: 1px solid #ffffff34;
+    display: block;
+    transition: .3s;
+}
+
+.page aside a:hover {
+    background-color: #c7c7c7b9;
+}
+
+/* End Aside */
+
+.page .main-content {
+    padding: 20px;
+}
+.page .main-content .title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.page .main-content .code-box {
+    background-color: #e3e3e3;
+    padding: 20px;
+}
+
+.page .main-content .code-box h2 {
+    margin-top: 0;
+}
+
+.page .main-content .code-box .code {
+    background-color: #EEE;
+    padding: 20px;
+}
+
+.page .main-content .code-box .code p {
+    margin: 10px 0;
+}
+
+.page .main-content .code-box .btn {
+    background-color: #00BCD4;
+    width: 150px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px 0 0;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.page .main-content .code-box .btn:hover {
+    opacity: .7;
+}
+
+@media (max-width:991px) {
+    .page {
+        flex-direction: column;
+    }
+    .page aside {
+        display: flex;
+        overflow-x: scroll;
+        width: 100%;
+        height: fit-content;
+    }
+}
+
+/* End Page */
